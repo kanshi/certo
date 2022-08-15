@@ -3,24 +3,65 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>Andrzej's homepage</title>
+	<title>Certo</title>
 	<style>
 		body {
-			margin:1em auto;
-			max-width:42rem;
-			padding:0.12rem .62rem;
-			font:1.1rem/1.62 sans-serif;
+		  font:1.1rem/1.62 sans-serif;
+		  color: #222;
+		  line-height: 1.5;
+		  margin: 1rem auto;
+		  max-width: 42rem;
+		  padding: 0.12rem .62rem;
 		}
 		a { text-decoration: none; }
 		p { text-align: justify; }
-		h1,h2,h3 {
-			padding-top: 0.6rem;
-			line-height:1.15rem;
+		h1, h2, h3, h4, h5, h6 {
+		  margin: 1.25em 0 0.5em 0;
+		  line-height: 1.2;
 		}
-		@media print {
-			body {
-				max-width:none
-			}
+		a:link { color: #00e; }
+		a:visited { color: #518; }
+		a:focus, a:hover { color: #03f; }
+		a:active { color: #e00; }
+		h1 a:empty:before, h2 a:empty:before, h3 a:empty:before,
+		h4 a:empty:before, h5 a:empty:before, h6 a:empty:before { 
+			content: "#"; 
+		}
+		h1 a:empty, h2 a:empty, h3 a:empty, h4 a:empty, h5 a:empty, h6 a:empty {
+		  visibility: hidden;
+		  padding-left: 0.25em;
+		}
+		h1:hover a:empty, h2:hover a:empty, h3:hover a:empty,
+		h4:hover a:empty, h5:hover a:empty, h6:hover a:empty {
+		  visibility: visible;
+		}
+		img { max-width: 100%; }
+		figure { margin: 1em 0; text-align: center; }
+		figcaption { font-size: small; }
+		pre, code, samp, kbd { color: #009; font-family: monospace, monospace; }
+		pre kbd { color: #060; }
+		pre, blockquote { background: #eee; padding: 0.5em; }
+		pre { overflow: auto; }
+		blockquote { border-left: medium solid #ccc; margin: 1em 0; }
+		blockquote :first-child { margin-top: 0; }
+		blockquote :last-child { margin-bottom: 0; }
+		table { border-collapse: collapse; }
+		th, td {
+		  border: thin solid #999;
+		  padding: 0.3em 0.4em;
+		  text-align: left;
+		}
+		@media (prefers-color-scheme: dark) {
+		  body { background: #111; color: #ccc; }
+		  a:link { color: #9bf; }
+		  a:visited { color: #caf; }
+		  a:focus, a:hover { color: #9cf; }
+		  a:active { color: #faa; }
+		  pre, code, samp, kbd { color: #6cf; }
+		  pre kbd { color: #9c6; }
+		  pre, blockquote { background: #000; }
+		  blockquote { border-color: #333; }
+		  th, td { border-color: #666; }
 		}
 	</style>
 </head>
@@ -36,22 +77,25 @@
 			I'm a fan of decentralized decision making and its role in making the world a more balanced and peaceful place to live in.	
 		<p>I am currently building software for VR and industrial manufacturing:
 		<ul>
-			<li><a href="https://www.fitmech.com/" target="_blank">FitMech</a> - Industrial IoT platform for lean manufacturing.
 			<li><a href="https://astronation.world/" target="_blank">Astronation</a> - a VR native, holistic, virtual world simulation.
-		</ul>
-		<p>My education path is about using software to solve engineering problems:
-		<ul>
-			<li>PhD in Engineering and Technology (with honors) - <em>A methodology for assessing the construction of machine elements using neural models and antipatterns</em>.
-			<li>MSc, BEng in Design of Computer Systems (with honors) - <em>System detecting and aiding in presentation of computer fraud</em>.
+			<li><a href="https://www.fitmech.com/" target="_blank">FitMech</a> - Industrial IoT platform for lean manufacturing.
 		</ul>
 
-		<p>My expertise in grounded in software engineering and management consulting. I have managed and built several EU startups in the role of a hands-on CTO/Architect - building core frameworks, supporting developers, establishing technical operations, promoting best practices, implementing information security and management standards <em>(eg. ISO/IEC 27000, PCI-DSS)</em>.
+		<p>My expertise in grounded in software engineering and management consulting. I have managed and built several EU startups in the role of a hands-on CTO/Architect - building core frameworks, supporting developers, establishing all technical operations, promoting best practices, implementing information security and management standards <em>(eg. ISO/IEC 27000, PCI-DSS)</em>.
+
+		<p>My education path is about using software to solve engineering problems:
+		<ul>
+			<li><em>PhD in Engineering and Technology (with honors)</em> - methodology for assessing the construction of machine elements using neural models and antipatterns.
+			<li><em>MSc, BEng in Design of Computer Systems (with honors)</em> - system detecting and aiding in presentation of computer fraud.
+		</ul>
+
 		<p>Software products I've been building in the past, range from a largest Spanish social network <em>(10M+ users)</em>, through a video streaming platform <em>(5K+ films)</em>, video-ads and marketing automation tools <em>(startup awards, 2xFMP)</em> to workflow and process management tools used by thousands of companies including government agencies, international corporations, and heavy industry firms.
-		<p>I have worked with many programming languages and frameworks including <em>Scala, C#, Java, Python, PHP, Delphi, C++, JavaScript, TypeScript, Go</em>... in particular I enjoy functional and declarative programming for their expressiveness and the simplification of software engineering processes at scale.
+
+		<p>I have worked with many programming languages including <em>Scala, C#, Java, Python, PHP, C++, Delphi, JavaScript, TypeScript, Go</em>. In particular, I enjoy functional and declarative programming for their expressiveness and the simplification of software engineering processes at scale.
 	</article>
 	<article>
 		<h2>Lets talk?</h2>
-		<p>Here are some of the topics I would like to explore in the near future. If you have any insights or expertise in these, I'd be happy to learn and exchange ideas with you.
+		<p>Here are some of the topics I enjoy exploring and learning about. If you have any insights or expertise in these, I'd be happy to exchange ideas with you.
 		<ul>
 			<li>High performance, distributed information processing.
 			<li>Automated processing of kinetic and electromagnetic signals.
